@@ -48,6 +48,45 @@ namespace Aliante_Astratto
             _width=0;
             _length=0;
         }
+       public Ala(double length,double width)
+       {
+            Lenght = length;
+            Width = width;
+       }
+       public Ala(Ala vecchia)
+       {
+            Lenght=vecchia.Lenght;
+            Width = vecchia.Width;
+       }
+        public override bool Equals(object obj)
+        {
+            if (!(obj is Ala otherAla) || otherAla == null)
+            {
+                return false;
+            }
 
+            return Lenght == otherAla.Lenght && Width == otherAla.Width;
+
+        }
+        public override void Add(Composite component)
+        {
+           
+        }
+        public override void Remove(int index)
+        {
+
+        }
+        public override Composite Get(int index)
+        {
+            return null;
+        }
+        public override string ToString()
+        {
+            return $"Lunghezza:{Lenght};Larghezza Alare:{Width}";
+        }
+        public override double Price()
+        {
+            return Lenght * Width;
+        }
     }
 }
