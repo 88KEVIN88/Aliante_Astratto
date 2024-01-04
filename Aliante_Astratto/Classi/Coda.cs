@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Aliante_Astratto
 {
-    internal class Coda
+    internal class Coda : Composite
     {
+       
     }
 }
