@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aliante_Astratto
 {
-    internal class Fusoliera : Composite
+    public  class Fusoliera : Composite
     {
         private double _lenght;
         private string _materials;
@@ -15,7 +15,7 @@ namespace Aliante_Astratto
             get { return _lenght; }
             set
             {
-                if(_lenght>0)
+                if(_lenght > 0)
                 {
                     _lenght = value;
                 }
@@ -38,8 +38,8 @@ namespace Aliante_Astratto
         }
         public Fusoliera(double lenght,string materiale)
         {
-            Lenght=lenght;
-            Materials = materiale;
+            _lenght=lenght;
+            _materials = materiale;
         }
         public override bool Equals(object obj)
         {
@@ -66,6 +66,12 @@ namespace Aliante_Astratto
         {
            return $"Lunghezza:{Lenght};Materiale della fusolieras:{Materials}";   
         }
+        public override double Price()
+        {
+            return Lenght * 3;
+        }
+        
+            
     }
 
 }

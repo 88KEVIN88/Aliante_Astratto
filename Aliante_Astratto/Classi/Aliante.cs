@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aliante_Astratto
 {
-    internal class Aliante : Composite
+    public class Aliante : Composite
     {
         private List<Composite> _compotenti;
 

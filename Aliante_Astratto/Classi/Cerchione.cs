@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Aliante_Astratto
 {
-    internal class Cerchione : Composite
+   public  class Cerchione : Composite
     {
         private double _pollici;
         private string _materiale;
@@ -34,13 +34,13 @@ namespace Aliante_Astratto
         }
         public Cerchione()
         {
-            Pollice = 0;
-            Materiale = null;
+            _pollici = 0;
+            _materiale = null;
         }
         public Cerchione(double pollici,string materiale)
         {
-            Pollice = pollici;
-            Materiale = materiale;
+            _pollici = pollici;
+            _materiale = materiale;
         }
         public Cerchione(Cerchione vecchhio)
         {

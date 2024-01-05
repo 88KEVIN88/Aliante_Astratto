@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aliante_Astratto
 {
-    internal class Ruota : Composite
+    public class Ruota : Composite
     {
         private Gomma _gomma;
         private Cerchione _cerchioni;
@@ -26,7 +26,7 @@ namespace Aliante_Astratto
             Gomme = new Gomma();
             Cerchioni = new Cerchione();
         }
-        public Ruota(Cerchione cerchioni,Gomma gomme)
+        public Ruota(Cerchione cerchioni, Gomma gomme)
         {
             Cerchioni = cerchioni;
             Gomme = gomme;
@@ -48,11 +48,11 @@ namespace Aliante_Astratto
         }
         public override void Add(Composite component)
         {
-            
+
         }
         public override void Remove(int index)
         {
-           
+
         }
         public override Composite Get(int index)
         {
@@ -65,5 +65,7 @@ namespace Aliante_Astratto
         public override double Price()
         {
             return 0;
+        }
     }
 }
+

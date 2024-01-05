@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Aliante_Astratto
 {
-    internal class Ala : Composite
+    public class Ala : Composite
     {
         private double _length;
         private double _width;
@@ -50,8 +50,8 @@ namespace Aliante_Astratto
         }
        public Ala(double length,double width)
        {
-            Lenght = length;
-            Width = width;
+            _length = length;
+            _width = width;
        }
        public Ala(Ala vecchia)
        {

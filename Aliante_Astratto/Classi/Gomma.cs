@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aliante_Astratto
 {
-    internal class Gomma : Composite
+   public class Gomma : Composite
     {
         private double _lenght, _width, r;
         public double Length
@@ -61,9 +61,9 @@ namespace Aliante_Astratto
         }
         public Gomma(double lenght,double widthm,double rag)
         {
-            Length = lenght;
-            Width = widthm;
-            Raggio = rag;
+            _lenght = lenght;
+            _width = widthm;
+            r = rag;
         }
         public override bool Equals(object obj)
         {
@@ -88,7 +88,7 @@ namespace Aliante_Astratto
         }
         public override string ToString()
         {
-           return $"Altezza:{Width};Larghezza:{Length};Raggio:{Raggio}";
+           return $"Altezza:{Length};Larghezza:{Width};Raggio:{Raggio}";
         }
         public override double Price()
         {

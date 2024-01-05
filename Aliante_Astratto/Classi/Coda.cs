@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aliante_Astratto
 {
-    internal class Coda : Composite
+    public class Coda : Composite
     {
         public double _lenght;
 
@@ -32,7 +32,7 @@ namespace Aliante_Astratto
         }
         public Coda(double lenght)
         {
-            Lenght= lenght;
+            _lenght= lenght;
         }
         public Coda(Coda vecchia)
         {
